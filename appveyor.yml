@@ -13,7 +13,6 @@ environment:
 on_finish:
 - ps: $blockRdp = $true; Invoke-Expression (Invoke-WebRequest 'https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1')
 
-	
 install:
 - date /T & time /T
 - ps: >-
